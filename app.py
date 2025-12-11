@@ -26,8 +26,8 @@ def predict_sales_for_item(item_id, date_to_predict):
     return max(0, pred[0])
 
 # --- Streamlit UI ---
-st.title("📊 Sales Prediction Dashboard")
-st.write("Predict future sales for different items using your trained XGBoost models.")
+st.title("Sales Prediction Dashboard")
+st.write("Predict future sales for different items using XGBoost.")
 
 # Sidebar controls
 st.sidebar.header("🔧 Prediction Controls")
