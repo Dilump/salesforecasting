@@ -48,7 +48,7 @@ if st.sidebar.button("Predict Sales"):
         st.error("No trained model found for this item. Please train it first.")
 
 # Optional: display chart placeholder
-st.subheader("📈 Future Prediction Trend (Demo)")
+st.subheader("📈 Future Prediction Trend")
 future_dates = pd.date_range(selected_date, periods=7)
 predictions = [predict_sales_for_item(item_id, d) for d in future_dates]
 chart_data = pd.DataFrame({'Date': future_dates, 'Predicted Sales': predictions})
